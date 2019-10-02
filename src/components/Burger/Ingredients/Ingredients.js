@@ -1,8 +1,8 @@
-import React, {component} from "react";
+import React, {Component} from "react";
 import classes from "./Ingredients.module.css";
 import PropTypes from "prop-types";
 
-class Ingredients extends component {
+class Ingredients extends Component {
     render(){
         let ingredient = null;
         switch (this.props.type) {
@@ -31,6 +31,7 @@ class Ingredients extends component {
             break;
           default:
             ingredient = null;
+            break;
         }
         return ingredient;
     }
